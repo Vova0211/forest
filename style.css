@@ -52,10 +52,12 @@
     min-height: 700px;
     padding-right: 58px;
     padding-top: 95px;
-    padding-left: 595px;
+    /* padding-left: 595px; */
     margin-bottom: 150px;
 }
 .intro__title {
+    color: white;
+    white-space: nowrap;
     margin: 0 0 34px 0;
     font-weight: lighter;
     line-height: 28px;
@@ -68,7 +70,9 @@
     
 }
 .intro__tx {
-    margin-left: 326px;
+    color: white;
+    /* margin-left: 326px; */
+    margin-left: 66%;
     font-size: 20px;
     text-align: center;
     display: block;
