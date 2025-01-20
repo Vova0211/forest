@@ -98,7 +98,6 @@
     color: #5B6460;
     font-size: 40px;
     font-weight: 400;
-
     margin-bottom: 0;
 }
 .left__text {
@@ -124,4 +123,88 @@
     flex-direction: row;
     justify-content: space-between;
     /* gap: 25px; */
+}
+.cabins {
+    margin-bottom: 135px;
+}
+
+.forest {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 650px;
+
+}
+.forest__right {
+    background-color: #E9ECE0;
+    padding: 150px 129px 0 110px;
+    font-family: "Open Sans";
+    /* display: flex; 
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;   */
+}
+.forest__title {
+    font-size: 40px;
+    font-weight: 400;
+}
+.forest__descr {
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 50px;
+}
+.forest__foot {
+    text-decoration: underline;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.btn__descr {
+    /* display: block; */
+    position: absolute;
+    font-family: "Open Sans";
+    font-weight: 300;
+    font-size: 12px;
+    max-width: 71px;
+    margin-left: 317px;
+    /* margin: auto; */
+    margin-top: 312px;
+    text-align: center;
+    text-transform: uppercase;
+    z-index: 10;
+}
+.btn__el {
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+}
+.btn__elipse1 {
+    margin-top: 237px;
+    margin-left: 264px;
+    min-width: 176px;
+    min-height: 176px;
+    opacity: 0.15;
+}
+.btn__elipse2 {
+    margin-top: 258px;
+    margin-left: 285px;
+    min-width: 134px;
+    min-height: 134px;
+    opacity: 0.25;
+}
+.btn__elipse3 {
+    margin-top: 277px;
+    margin-left: 304px;
+    min-width: 96px;
+    min-height: 96px;
+}
+.facilites {
+    background-color: #5B6460;
+    color: white;
+}
+.facilites__title {
+    font-size: 40px;
+    text-align: center;
+    font-family: "Open Sans";
+    font-weight: 300;
 }
