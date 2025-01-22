@@ -12,14 +12,18 @@
 body {
     margin: auto;
     max-width: 1408px;
+    /* transform: translate(-50%, 0); */
 }
 .header {
+    
     /* border: 1px solid red; */
     margin-bottom: 0;
     padding: 18px 32px 17px 146px;
-    max-width: 1408px;
+    /* max-width: 1408px; */
+    width: 100%;
     margin: auto;
     display: flex;
+    
     justify-content: space-between;
 }
 .nav {
@@ -32,6 +36,9 @@ body {
     display: flex;
     list-style: none;
     gap: 36px;
+    font-family: "Open Sans";
+    font-size: 14px;
+    font-weight: 300;
 }
 .header__btn {
     text-transform: uppercase;
@@ -46,7 +53,8 @@ body {
 .main {
     /* transform: translate(-50%, 0); */
     margin: auto;
-    max-width: 1408px;
+    /* max-width: 1408px; */
+    width: 100%;
 }
 .intro {
     /* display: flex; */
@@ -59,6 +67,7 @@ body {
     padding-top: 95px;
     /* padding-left: 595px; */
     margin-bottom: 150px;
+    margin: auto;
 }
 .intro__title {
     color: white;
@@ -119,15 +128,39 @@ body {
     text-decoration: underline;
     color: #5B6460;
 }
+.cabins__right {
+    display: flex;
+    justify-content: flex-end;
+}
 .right__img {
     width: 693px;
+    background-image: url(./images/cabins_img.jpg);
+    background-position:top;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .cabins__footer {
     margin-top: 150px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     /* gap: 25px; */
+}
+.cabins__footer__img {
+    width: 31%;
+    height: 387px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.cabins__footer__img:nth-child(1) {
+    background-image: url("./images/cabins__img1.jpg");
+}
+.cabins__footer__img:nth-child(2) {
+    background-image: url("./images/cabins__img2.jpg");
+}
+.cabins__footer__img:nth-child(3) {
+    background-image: url("./images/cabins__img3.jpg");
 }
 .cabins {
     margin-bottom: 135px;
@@ -166,20 +199,33 @@ body {
 }
 .forest__btn {
     position: relative;
+    width: 704px;
+
 }
 .btn__descr {
-    /* display: block; */
     position: absolute;
     font-family: "Open Sans";
     font-weight: 300;
     font-size: 12px;
     max-width: 71px;
-    margin-left: 317px;
-    /* margin: auto; */
-    margin-top: 312px;
+    top: calc(50% - 18px);
+    left: calc(50% - 35.5px);
     text-align: center;
     text-transform: uppercase;
+    border: none;
     z-index: 10;
+    border-radius: 10px;
+    color: black;
+    transition: .2s linear;
+    background: rgba(239, 239, 239, 0);
+}
+.btn__second {
+    top: calc(100% - 53px);
+    left: calc(100% - 41.02px);
+    border-radius: 0;
+    background: black;
+    color: white;
+    max-width: 100px;
 }
 .btn__el {
     position: absolute;
@@ -187,30 +233,35 @@ body {
     border-radius: 50%;
 }
 .btn__elipse1 {
-    margin-top: 237px;
-    margin-left: 264px;
+    top: calc(50% - 88px);
+    left: calc(50% - 88px);
     min-width: 176px;
     min-height: 176px;
     opacity: 0.15;
     z-index: 3;
 }
 .btn__elipse2 {
-    margin-top: 258px;
-    margin-left: 285px;
+    top: calc(50% - 67px);
+    left: calc(50% - 67px);
     min-width: 134px;
     min-height: 134px;
     opacity: 0.25;
     z-index: 4;
 }
 .btn__elipse3 {
-    margin-top: 277px;
-    margin-left: 304px;
+    top: calc(50% - 48px);
+    left: calc(50% - 48px);
     min-width: 96px;
     min-height: 96px;
     z-index: 5;
 }
-.forest__map {
+.notVisible {
     display: none;
+}
+iframe {
+    width: 704px;
+}
+.forest__map {
     background-color: black;
     opacity: 0.5;
     position: absolute;
@@ -245,6 +296,7 @@ body {
     font-family: "Open Sans";
     font-weight: 400;
     font-size: 18px;
+    
 }
 .facilites__ico {
     display: flex;
@@ -273,7 +325,8 @@ body {
     background-image: url(./images/facilites_foot__img2.jpg);
 }
 .foot__btn {
-    left: 626px;
+    /* left: 626px; */
+    left: calc(50% - 78.5px);
     top: 202px;
     display: flex;
     justify-content: center;
@@ -385,6 +438,7 @@ body {
 .footer__right__icons {
     margin-left: 180px;
     display: flex;
+    flex-wrap: wrap;
     gap: 40px;
 }
 .right__icons__img {
